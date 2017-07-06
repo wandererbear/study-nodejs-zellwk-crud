@@ -21,7 +21,8 @@ MongoClient.connect('mongodb://wandererbear:wandererbear@ds147882.mlab.com:47882
 // <%= พิมพ์ variable เป็น template string %>
 app.set('view engine', 'ejs')
 
-// setup app
+// Using Middleware(pluginแปลงภาษา)
+// app.use(middleware.method()) 
 app.use(bodyParser.urlencoded({extended: true}))
 
 // crud
